@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "splatoonfont";
+    src: url("Splatoon1.woff");
+}
+
+* {
+    font-family: "splatoonfont";
+    text-align: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    background-color: greenyellow;
+}
+
+.button {
+    width: 80%;
+    margin: auto;
+    height: 125px;
+    background-color: greenyellow;
+}
+
+.buttonleft {
+    width: 30%;
+    height: 80px;
+    background-color: greenyellow;
+}
+
+.buttonright {
+    width: 30%;
+    height: 80px;
+    background-color: red;
+}
+
+.buttontext {
+    font-size: 35px;
+}
+
+.larger {
+    width: 200px;
+    height: 200px;
+}
+
+.choicse {
+    max-width: 750px;
+    text-align: center;
+    margin:auto;
+}
+
+.mainimg {
+    background-color: transparent;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+#search {
+    width: 60%;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Splatoon 3 Weapon Generator</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body onload="createsite()">
+    <h1>Random Splatoon 3 Weapon Generator</h1>
+    <div>
+        <img id="bigimg" class="larger mainimg" src="icons/random.png" alt="Weapon not chosen yet">
+        <p id="smalltxt"></p>
+    </div>
+    <button class="button buttontext" onclick="chooseweapon()"> GENERATE</button>
+    <details>
+        <summary>
+            Weapon Choices
+        </summary>
+        <div>
+            <input id="search" type="text" class="input" placeholder="Search weapon name" oninput="searchit()"/>
+        </div>
+        <div class="choicse noselect">
+            <img id="52 Gal">
+            <img id="52 Gal Deco">
+            <img id="96 Gal">
+            <img id="96 Gal Deco">
+            <img id="Aerospray MG">
+            <img id="Aerospray RG">
+            <img id="Annaki Splattershot Nova">
+            <img id="Custom Jet Squelcher">
+            <img id="Custom Splattershot Jr">
+            <img id="Foil Squeezer">
+            <img id="Forge Splattershot Pro">
+            <img id="H-3 Nozzlenose">
+            <img id="H-3 Nozzlenose D">
+            <img id="Jet Squelcher">
+            <img id="L-3 Nozzlenose">
+            <img id="L-3 Nozzlenose D">
+            <img id="N-ZAP '85">
+            <img id="N-ZAP '89">
+            <img id="Neo Splash-o-matic">
+            <img id="Neo Sploosh-o-matic">
+            <img id="Splash-o-matic">
+            <img id="Splattershot">
+            <img id="Splattershot Jr">
+            <img id="Splattershot Nova">
+            <img id="Splattershot Pro">
+            <img id="Sploosh-o-matic">
+            <img id="Squeezer">
+            <img id="Tentatek Splattershot">
+            <img id="Blaster">
+            <img id="Clash Blaster">
+            <img id="Clash Blaster Neo">
+            <img id="Custom Blaster">
+            <img id="Custom Range Blaster">
+            <img id="Luna Blaster">
+            <img id="Luna Blaster Neo">
+            <img id="Range Blaster">
+            <img id="Rapid Blaster">
+            <img id="Rapid Blaster Deco">
+            <img id="Rapid Blaster Pro">
+            <img id="Rapid Blaster Pro Deco">
+            <img id="S-BLAST '91">
+            <img id="S-BLAST '92">
+            <img id="Big Swig Roller">
+            <img id="Big Swig Roller Express">
+            <img id="Carbon Roller">
+            <img id="Carbon Roller Deco">
+            <img id="Dynamo Roller">
+            <img id="Flingza Roller">
+            <img id="Foil Flingza Roller">
+            <img id="Gold Dynamo Roller">
+            <img id="Krak-On Splat Roller">
+            <img id="Splat Roller">
+            <img id="Inkbrush">
+            <img id="Inkbrush Nouveau">
+            <img id="Octobrush">
+            <img id="Octobrush Nouveau">
+            <img id="Painbrush">
+            <img id="Painbrush Nouveau">
+            <img id="Bamboozler 14 Mk I">
+            <img id="Bamboozler 14 Mk II">
+            <img id="Classic Squiffer">
+            <img id="Custom E-liter 4K">
+            <img id="Custom E-liter 4K Scope">
+            <img id="Custom Goo Tuber">
+            <img id="E-liter 4K">
+            <img id="E-liter 4K Scope">
+            <img id="Goo Tuber">
+            <img id="New Squiffer">
+            <img id="Snipewriter 5B">
+            <img id="Snipewriter 5H">
+            <img id="Splat Charger">
+            <img id="Splatterscope">
+            <img id="Z+F Splat Charger">
+            <img id="Z+F Splatterscope">
+            <img id="Bloblobber">
+            <img id="Bloblobber Deco">
+            <img id="Custom Explosher">
+            <img id="Dread Wringer">
+            <img id="Dread Wringer D">
+            <img id="Explosher">
+            <img id="Slosher">
+            <img id="Slosher Deco">
+            <img id="Sloshing Machine">
+            <img id="Sloshing Machine Neo">
+            <img id="Tri-Slosher">
+            <img id="Tri-Slosher Nouveau">
+            <img id="Ballpoint Splatling">
+            <img id="Ballpoint Splatling Nouveau">
+            <img id="Custom Hydra Splatling">
+            <img id="Heavy Edit Splatling">
+            <img id="Heavy Edit Splatling Nouveau">
+            <img id="Heavy Splatling">
+            <img id="Heavy Splatling Deco">
+            <img id="Hydra Splatling">
+            <img id="Mini Splatling">
+            <img id="Nautilus 47">
+            <img id="Nautilus 79">
+            <img id="Zink Mini Splatling">
+            <img id="Custom Douser Dualies FF">
+            <img id="Custom Dualie Squelchers">
+            <img id="Dapple Dualies">
+            <img id="Dapple Dualies Nouveau">
+            <img id="Dark Tetra Dualies">
+            <img id="Douser Dualies FF">
+            <img id="Dualie Squelchers">
+            <img id="Enperry Splat Dualies">
+            <img id="Glooga Dualies">
+            <img id="Glooga Dualies Deco">
+            <img id="Light Tetra Dualies">
+            <img id="Splat Dualies">
+            <img id="Recycled Brella 24 Mk I">
+            <img id="Recycled Brella 24 Mk II">
+            <img id="Sorella Brella">
+            <img id="Splat Brella">
+            <img id="Tenta Brella">
+            <img id="Tenta Sorella Brella">
+            <img id="Undercover Brella">
+            <img id="Undercover Sorella Brella">
+            <img id="Custom Wellstring V">
+            <img id="Inkline Tri-Stringer">
+            <img id="REEF-LUX 450">
+            <img id="REEF-LUX 450 Deco">
+            <img id="Tri-Stringer">
+            <img id="Wellstring V">
+            <img id="Charcoal Decavitator">
+            <img id="Mint Decavitator">
+            <img id="Splatana Stamper">
+            <img id="Splatana Stamper Nouveau">
+            <img id="Splatana Wiper">
+            <img id="Splatana Wiper Deco">
+        </div>     
+        <button class="buttonleft buttontext" onclick="allOn()">All ON</button>
+        <button class="buttonright buttontext" onclick="allOff()">All OFF</button>   
+    </details>
+
+</body>
+
+</html>
